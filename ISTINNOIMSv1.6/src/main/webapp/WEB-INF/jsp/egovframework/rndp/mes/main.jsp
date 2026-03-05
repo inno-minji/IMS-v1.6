@@ -12,7 +12,8 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $(document).on('click', '#menu-toggle-btn', function() {
-        $('body').toggleClass('nav-open');
+       // $('body').toggleClass('nav-open');
+        $('body').toggleClass('nav-close');
 
         // 애니메이션이 끝나는 시점에 리사이즈 이벤트 발생 (차트 깨짐 방지)
         setTimeout(function() {
@@ -58,9 +59,6 @@ $(document).ready(function(){
 	
 	
 });
-
-
-
 
 
 
@@ -919,15 +917,18 @@ window.onload = function() {
 /* 대시보드 화면 넓게보기 */
 /* [1] 최상위 레이아웃 및 브라우저 깨짐 방지 */
 #main_container {
-    min-width: 1200px !important;
+/*    min-width: 1200px !important;
+    padding: 63px 32px 12px 80px !important; */
+    min-width: 1480px !important;
+    padding: 63px 32px 12px 280px !important;
     width: 100% !important;
-    padding: 63px 32px 12px 80px !important; /* 좌측 80px은 햄버거 버튼 공간 */
     transition: padding-left 0.3s ease;
 }
 
 /* [2] 사이드바 및 토글 상태 제어 */
 #side-nav {
-    left: -260px !important;
+/*    left:  -260px !important; */
+    left: 0 !important;
     transition: left 0.3s ease !important;
 }
 body.nav-open #side-nav {
@@ -936,6 +937,14 @@ body.nav-open #side-nav {
 body.nav-open #main_container {
     padding-left: 280px !important; /* 사이드바 열릴 때 여백 복구 */
     min-width: 1480px !important; 
+}
+
+body.nav-close #side-nav {
+    left: -260px !important;
+}
+body.nav-close #main_container {
+    padding-left: 80px !important; 
+    min-width: 1200px !important; 
 }
 
 /* [3] 대시보드 메인 컨테이너 */
@@ -1014,7 +1023,8 @@ body.nav-open #main_container {
     z-index: 999999 !important;
     width: 50px;
     height: 50px;
-    background: #101935;
+    background: #4869fb;
+/*    background: #101935; */
     color: white;
     border-radius: 50%;
     border: none;
