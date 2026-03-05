@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+	<typeAlias alias="mesCalVO" type="egovframework.rndp.mes.main.service.MesCalVO" />
+	
+	<select id="mesCalDAO.mainCalendarWorkList" parameterClass="mesCalVO" resultClass="mesCalVO">
+		/*	mesCalDAO.mainCalendarWorkList */
+		SELECT
+			eChangeKey AS itemId,
+			eWorkStart AS itemDate 
+		FROM I_CHANGE
+		WHERE 1=1 
+		AND 
+		DATE_FORMAT(eWorkStart, '%Y-%m-%d') BETWEEN #calStart# AND #calEnd#
+	</select>
+	
+	<select id="mesCalDAO.mainCalendarErrList" parameterClass="mesCalVO" resultClass="mesCalVO">
+		/*	mesCalDAO.mainCalendarErrList */
+		SELECT
+			ISSUE_NUM AS itemId,
+			eProcessingDate AS itemDate 
+		FROM I_ISSUE
+		WHERE 1=1 
+		AND eProcessingDate >= #calStart#
+		AND #calEnd# >  eProcessingDate
+	</select>
+	
+	<select id="mesCalDAO.mainCalendarInsList" parameterClass="mesCalVO" resultClass="mesCalVO">
+		/*	mesCalDAO.mainCalendarInsList */
+		SELECT
+			INSPECTION_NUM AS itemId,
+			eInspectionDate AS itemDate 
+		FROM INSPECTION
+		WHERE 1=1 
+		AND eInspectionDate >= #calStart#
+		AND #calEnd# >  eInspectionDate
+	</select>
+	
+	
+</sqlMap>

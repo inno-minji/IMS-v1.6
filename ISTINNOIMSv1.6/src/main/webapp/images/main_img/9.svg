@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+    <defs>
+        <filter id="bxe20sqdza" x="0" y="0" width="37" height="37" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="filter:url(#bxe20sqdza)">
+        <g data-name="타원 9" transform="translate(12 9)" style="fill:#37afc5;stroke:#f4f6ff;stroke-width:3px">
+            <circle cx="6.5" cy="6.5" r="6.5" style="stroke:none"/>
+            <circle cx="6.5" cy="6.5" r="8" style="fill:none"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <g data-name="그룹 13">
+        <g data-name="그룹 11">
+            <g data-name="사각형 32" style="stroke:#fff;fill:none">
+                <path style="stroke:none" d="M0 0h5v5H0z"/>
+                <path style="fill:none" d="M.5.5h4v4h-4z"/>
+            </g>
+            <g data-name="사각형 33" style="stroke:#fff;fill:none">
+                <path style="stroke:none" d="M0 0h5v5H0z" transform="translate(7)"/>
+                <path style="fill:none" d="M.5.5h4v4h-4z" transform="translate(7)"/>
+            </g>
+        </g>
+        <g data-name="그룹 12">
+            <g data-name="사각형 32" style="stroke:#fff;fill:none">
+                <path style="stroke:none" d="M0 0h5v5H0z" transform="translate(0 7)"/>
+                <path style="fill:none" d="M.5.5h4v4h-4z" transform="translate(0 7)"/>
+            </g>
+            <g data-name="사각형 33" style="stroke:#fff;fill:none">
+                <path style="stroke:none" d="M0 0h5v5H0z" transform="translate(7 7)"/>
+                <path style="fill:none" d="M.5.5h4v4h-4z" transform="translate(7 7)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg data-name="그룹 51" xmlns="http://www.w3.org/2000/svg" width="12.115" height="11.816" viewBox="0 0 12.115 11.816">
+    <defs>
+        <clipPath id="wx3o9scfga">
+            <path data-name="사각형 62" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0h12.116v11.816H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 44">
+        <g data-name="그룹 43" style="clip-path:url(#wx3o9scfga)">
+            <path data-name="패스 28" d="M5.777 14.582H2V3.928l3.777 2.747z" transform="translate(-1.608 -3.158)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+        </g>
+    </g>
+    <path data-name="선 7" transform="translate(2.077 3.785)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+    <path data-name="선 8" transform="translate(2.077 6.399)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+    <g data-name="그룹 46">
+        <g data-name="그룹 45" style="clip-path:url(#wx3o9scfga)">
+            <path data-name="선 9" transform="translate(2.077 9.012)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+            <path data-name="패스 29" d="M25.042 14.582h-3.777V3.928l3.777 2.747z" transform="translate(-17.096 -3.158)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+        </g>
+    </g>
+    <path data-name="선 10" transform="translate(5.854 3.785)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+    <path data-name="선 11" transform="translate(5.854 6.399)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+    <g data-name="그룹 48">
+        <g data-name="그룹 47" style="clip-path:url(#wx3o9scfga)">
+            <path data-name="선 12" transform="translate(5.854 9.012)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+            <path data-name="패스 30" d="M44.308 14.582h-3.777V3.928l3.777 2.747z" transform="translate(-32.585 -3.158)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+        </g>
+    </g>
+    <path data-name="선 13" transform="translate(9.632 3.785)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+    <path data-name="선 14" transform="translate(9.632 6.399)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+    <g data-name="그룹 50">
+        <g data-name="그룹 49" style="clip-path:url(#wx3o9scfga)">
+            <path data-name="선 15" transform="translate(9.632 9.012)" style="fill:none;stroke:#555;stroke-width:.8px" d="M0 0v1.742"/>
+        </g>
+    </g>
+</svg>

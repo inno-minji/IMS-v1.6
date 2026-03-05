@@ -1,0 +1,14 @@
+<svg data-name="그룹 107" xmlns="http://www.w3.org/2000/svg" width="11" height="10.4" viewBox="0 0 11 10.4">
+    <g data-name="그룹 62">
+        <g data-name="사각형 77" style="stroke:#555;stroke-width:.8px;fill:#fff">
+            <path style="stroke:none" d="M0 0h11v8H0z"/>
+            <path style="fill:none" d="M.4.4h10.2v7.2H.4z"/>
+        </g>
+        <path data-name="패스 45" d="M992.472 1693.285h10.236" transform="translate(-992 -1687)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+    </g>
+    <g data-name="패스 46" style="fill:none">
+        <path d="M0 1h3v3.039H0z" style="stroke:none" transform="translate(4.017 6.309)"/>
+        <path d="M.8 1.8v1.44h1.4V1.8H.8M0 1h3v3.04H0V1z" style="fill:#555;stroke:none" transform="translate(4.017 6.309)"/>
+    </g>
+    <path data-name="패스 47" d="M1005.85 1696.668h5.373" transform="translate(-1003.024 -1686.668)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+</svg>

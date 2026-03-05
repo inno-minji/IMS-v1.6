@@ -1,0 +1,17 @@
+<svg data-name="그룹 63" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+    <g data-name="사각형 78" style="stroke:#555;stroke-width:.8px;fill:#fff">
+        <path style="stroke:none" d="M0 0h11v2H0z"/>
+        <path style="fill:none" d="M.4.4h10.2v1.2H.4z"/>
+    </g>
+    <g data-name="사각형 80" style="stroke:#555;stroke-width:.8px;fill:#fff">
+        <path style="stroke:none" d="M0 0h11v3H0z" transform="translate(0 3)"/>
+        <path style="fill:none" d="M.4.4h10.2v2.2H.4z" transform="translate(0 3)"/>
+    </g>
+    <g data-name="사각형 81" style="stroke:#555;stroke-width:.8px;fill:#fff">
+        <path style="stroke:none" d="M0 0h11v3H0z" transform="translate(0 7)"/>
+        <path style="fill:none" d="M.4.4h10.2v2.2H.4z" transform="translate(0 7)"/>
+    </g>
+    <path data-name="패스 49" d="M1134.284 1694.5h-1.443" transform="translate(-1125 -1686)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+    <path data-name="패스 50" d="M1134.284 1694.5h-1.443" transform="translate(-1125 -1690)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+    <path data-name="패스 51" d="M1134.284 1694.5h-1.443" transform="translate(-1125 -1693.5)" style="fill:none;stroke:#555;stroke-width:.8px"/>
+</svg>

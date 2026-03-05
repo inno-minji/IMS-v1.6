@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="263" height="4" viewBox="0 0 263 4">
+    <defs>
+        <linearGradient id="mb1pzirusb" x1=".912" y1=".5" x2=".119" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+            <stop offset=".507" stop-color="#fff" stop-opacity=".502"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="7arb6juv1a" x="0" y="0" width="263" height="4" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation=".5" result="blur"/>
+            <feFlood/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="filter:url(#7arb6juv1a)">
+        <path data-name="사각형 72" transform="translate(1.5 .5)" style="opacity:.504;fill:url(#mb1pzirusb)" d="M0 0h260v1H0z"/>
+    </g>
+</svg>

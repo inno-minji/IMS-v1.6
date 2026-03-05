@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.494" height="23.503" viewBox="0 0 19.494 23.503">
+    <g data-name="되돌리기">
+        <g data-name="그룹 90">
+            <path data-name="패스 69" d="M7.582 56.96a9.142 9.142 0 0 0 12.7 12.7l-2.422-1.847" transform="translate(-5.255 -50.346)" style="fill:none;stroke:rgba(4,181,51,.25);stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <path data-name="선 31" transform="translate(14.319 19.314)" style="fill:none;stroke:rgba(4,181,51,.25);stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M.708 0 0 3.298"/>
+        </g>
+        <g data-name="그룹 91">
+            <path data-name="패스 70" d="M51.829 35.573a9.141 9.141 0 0 0-12.7-12.7l2.421 1.846" transform="translate(-34.663 -18.685)" style="fill:none;stroke:rgba(4,181,51,.25);stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <path data-name="선 32" transform="translate(4.466 .891)" style="fill:none;stroke:rgba(4,181,51,.25);stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 3.298.708 0"/>
+        </g>
+    </g>
+</svg>
