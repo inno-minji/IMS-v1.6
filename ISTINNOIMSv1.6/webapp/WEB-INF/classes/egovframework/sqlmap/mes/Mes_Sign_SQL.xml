@@ -305,14 +305,14 @@
 		/* mesSignDAO.selectSignSubNum */
 		SELECT AUTO_INCREMENT
 		FROM information_schema.TABLES
-		WHERE TABLE_SCHEMA = 'IMS'
+		WHERE TABLE_SCHEMA = DATABASE()
 		  AND TABLE_NAME = 'S_SIGN_PATH';
 	</select>
 	
 			
 	<insert id="mesSignDAO.signSubInsertPath" parameterClass="mesSignVO" >
 		/* mesSignDAO.signSubInsertPath */
-		INSERT INTO IMS.S_SIGN_PATH
+		INSERT INTO S_SIGN_PATH
 			( 
 				  S_SIGN_PATH_SUB_STAFF_KEY
 				, S_SIGN_PATH_SUB_GUBUN
