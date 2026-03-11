@@ -72,10 +72,10 @@ window.addEventListener("DOMContentLoaded", function () {
         notice("등록이 완료되었습니다!");
         
         eLifCheck();
-        eAssetSNumCheckB = "F";
+        eAssetNumCheckB = "F";
 		var sNumValue = $("#eAssetSNumber").val();
         if (sNumValue != null && sNumValue.trim() !== "") {
-        	eAssetNumCheckB = "F";
+        	eAssetSNumCheckB = "F";
         }
        
         history.replaceState({}, null, window.location.pathname);
@@ -196,18 +196,25 @@ function setToolTip(){
 	});
 	
 	$(window).on('load', function() {
-	    // HTML뿐만 아니라 모든 리소스가 준비된 시점
-
+		
 		const currentSelect = $("#positionCode");
         const currentVal = currentSelect.val();
         if (currentVal && currentVal !== "" && currentVal !== "null") {
         	try {
         		const codeArray = JSON.parse(currentVal);
+        		
         		for (var i=0; i<4; i++){
         			if(codeArray[i] == "0" || codeArray[i] == 0){
+        				toggleNextStep(i+1, false, false);
             			break;
             		} else{
-            			getSelect(i+2, codeArray[i]);
+            			if(codeArray[i] == "-1" || codeArray[i] == -1){
+            				getInput(i+1);
+            			} else {
+            				var isNextInput = true;
+            				if(i<3 && (codeArray[i+1] == "-1" || codeArray[i+1] == -1)) {isNextInput = false;}
+            				getSelect(i+2, codeArray[i], isNextInput);
+            			}
             		}
         		}
         		
@@ -220,25 +227,20 @@ function setToolTip(){
 		}
 	});
 	
-/* 	function handleOPassClick() {
-		 체크박스의 상태를 직접 변수에 저장
-	    var isChecked = $("#oPass").is(":checked");
-	    if(isChecked){
-	    	 $("#oSignPass").val("Y");
-	    		var elements = document.getElementsByName("sSignStaffKey");
-		        if (elements.length > 0) {
-		            if (confirm("선택한 결재자 정보를 삭제고 \n결재 제외처리 하시겠습니까?")) {
-		                $('#lineRow3').empty();
-		            } else {
-		            	$("#oPass").prop('checked', false);
-		            	 $("#oSignPass").val("N");
-		                return; 
-		            }
-		        }
-	    } else {
-            $("#oSignPass").val("N");
-	    }
-	} */
+	function getInput(depth) {
+	    var $currentSpan = $("#mMaintanceCate" + depth);
+	    $currentSpan.show();
+	    if(depth > 1) $currentSpan.prev(".ico_arrow").show();
+
+	    setTimeout(function() {
+	        $currentSpan.find("select").hide().val("-1");
+	        $currentSpan.find("input").show();
+	        if (depth < 4) {
+	            toggleNextStep(depth, true, true); 
+	        }
+	    }, 100); 
+	    
+	}
 	
 	 function modelCheck(element) {
          var value = $(element).val();
@@ -546,7 +548,7 @@ function setToolTip(){
 	function getCateData(depth) {
 	    var currentDepth = depth - 1; 
 	    var currentVal = $("#maintanceSelect" + currentDepth).val();
-	
+
 	    if (currentVal == "-1") {
 	        toggleNextStep(currentDepth, false, false);
 	        return; 
@@ -588,7 +590,7 @@ function setToolTip(){
 	    });
 	}
 	
-	function getSelect(depth, selVal) {
+	function getSelect(depth, selVal, isNextInput) {
 	    var currentDepth = depth - 1;
 	    var currentVal = selVal;
 	    if(currentVal == "-1"){
@@ -599,7 +601,6 @@ function setToolTip(){
 	    }, 100);
 	    
 	   
-	   	console.log("1이떠야함: " + currentVal + ", " + $("#maintanceSelect" + currentDepth).val());
 	    if (currentVal == "0") {
 	        toggleNextStep(currentDepth, false, false);
 	    }
@@ -628,7 +629,7 @@ function setToolTip(){
 	            }
 	            
 	            // 0을 선택해서 들어온 경우라면, 데이터는 받아오되 '다음 칸'을 보여주지는 않음
-	            if (currentVal != "0") {
+	            if (currentVal != "0" && isNextInput) {
 	                toggleNextStep(currentDepth, true, false);
 	            }
 	        }
@@ -1226,7 +1227,7 @@ function setToolTip(){
 				            <option value="0" selected>선택 없음</option>
 				            <option value="-1">직접 입력</option>
 				        </select>
-				        <input type="text" id="directInput1" name="directInput1" style="display:none; width:120px;">
+				        <input type="text" id="directInput1" name="directInput1" style="display:none; width:120px;" value="${mesassetVO.directInput1}">
 				    </span>
 				    <i class="ico_arrow" style="display:none;"></i>
 				    <span id="mMaintanceCate2" style="position:relative; display:none;">
@@ -1234,7 +1235,7 @@ function setToolTip(){
 				            <option value="0" selected>선택 없음</option>
 				            <option value="-1">직접 입력</option>
 				        </select>
-				        <input type="text" id="directInput2" name="directInput2" style="display:none; width:120px;">
+				        <input type="text" id="directInput2" name="directInput2" style="display:none; width:120px;" value="${mesassetVO.directInput2}">
 				    </span>
 				    <i class="ico_arrow" style="display:none;"></i>
 				    <span id="mMaintanceCate3" style="position:relative; display:none;">
@@ -1242,7 +1243,7 @@ function setToolTip(){
 				            <option value="0" selected>선택 없음</option>
 				            <option value="-1">직접 입력</option>
 				        </select>
-				        <input type="text" id="directInput3" name="directInput3" style="display:none; width:120px;">
+				        <input type="text" id="directInput3" name="directInput3" style="display:none; width:120px;" value="${mesassetVO.directInput3}">
 				    </span>
 				    <i class="ico_arrow" style="display:none;"></i>
 				    <span id="mMaintanceCate4" style="position:relative; display:none;">
@@ -1250,7 +1251,7 @@ function setToolTip(){
 				            <option value="0" selected>선택 없음</option>
 				            <option value="-1">직접 입력</option>
 				        </select>
-				        <input type="text" id="directInput4" name="directInput4" style="display:none; width:120px;">
+				        <input type="text" id="directInput4" name="directInput4" style="display:none; width:120px;" value="${mesassetVO.directInput4}">
 				    </span>
 				</td>	
 				</tr>

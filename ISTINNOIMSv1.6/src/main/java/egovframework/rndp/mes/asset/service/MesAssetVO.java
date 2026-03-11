@@ -33,7 +33,34 @@ public class MesAssetVO extends DefultVO{
 	private String aAssetKeyList					= "";
 	private String aRowNo					= "";
 	
-
+	public String getDirectInput1() {
+		return directInput1;
+	}
+	public void setDirectInput1(String directInput1) {
+		this.directInput1 = directInput1;
+	}
+	public String getDirectInput2() {
+		return directInput2;
+	}
+	public void setDirectInput2(String directInput2) {
+		this.directInput2 = directInput2;
+	}
+	public String getDirectInput3() {
+		return directInput3;
+	}
+	public void setDirectInput3(String directInput3) {
+		this.directInput3 = directInput3;
+	}
+	public String getDirectInput4() {
+		return directInput4;
+	}
+	public void setDirectInput4(String directInput4) {
+		this.directInput4 = directInput4;
+	}
+	private String directInput1					= "";
+	private String directInput2					= "";
+	private String directInput3					= "";
+	private String directInput4					= "";
 	public String getPositionCode() {
 		return positionCode;
 	}
